@@ -1,0 +1,29 @@
+{{!-- {{>header}}
+<section class="container my-4">
+    <h3 class="text-center text-primary">hotel Data</h3>
+    {{#unless user}}
+    <div class="alert alert-danger">
+        No hotel Data Found
+    </div>
+    {{else}}
+    <table class="table table-stripped">
+        <thead class="alert alert-primary p-3">
+            <tr>
+                <th>ID: {{user.id}}</th>
+                <th>name: {{user.name}}</th>
+            </tr>
+            <tr>
+                <td>email: {{user.email}}</td>
+                <td>phone: {{user.phoneHotel}}</td>
+            </tr>
+            <tr>
+                <td>city: {{user.price}}</td>
+                <td>city: {{user.city}}</td>
+            </tr>
+              <td><img src="{{this.image}}" alt=""></td>
+        </thead>
+    </table>
+                <th>image: <img src="{{user.image}}" class="w-100 h-100" alt=""></th>
+    {{/unless}}
+</section>
+{{>footer}} --}}
