@@ -1,0 +1,34 @@
+<div class="header ">
+  <div class="container-fluid text-capitalize d-flex justify-content-between align-items-center">
+
+
+
+    <div id="mnue-bar">
+      <i class="fas fa-bars"></i>
+    </div>
+
+
+    <a href="#" class="logo mx-5"><span>T</span>ravel</a>
+    <nav class="text-capitalize  m-auto">
+      <a href="#" routerLink="home">home</a>
+      <a href="#services">services</a>
+      <a  routerLink="gallery">Hotel</a>
+      <a href="#review">review</a>
+      <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons  ">
+      <a>
+
+        <img [src]="_GetdataService.imageUser" *ngIf="_GetdataService.isLogin" alt="" id="image-user" routerLink="profile/{{userId}}" class="img-fluid   rounded-pill" />
+      </a>
+    =
+      <a id="login-icon" *ngIf="!_GetdataService.isLogin" routerLink="/login">
+        <i class="far fa-user"  ></i>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+

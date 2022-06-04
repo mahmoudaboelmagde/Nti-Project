@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700;800&family=Nunito:wght@200;300;400;600;700&family=Poppins:ital,wght@0,300;1,500&display=swap');
+
+// color
+:root{
+--orange:#ffa500;
+--white:white;
+--black:rgb(51, 51, 51);
+--light-color:#666;
+--box-shadow:0.5rem 1rem rgba(0,0,0,.11);
+--border:.2rem solid rgba(0,0,0,.1);
+--outline:.1rem solid rgba(0,0,0,.1);
+--outline-hover:.2rem solid rgba(0,0,0,.1);
+
+}
+
+$orange:#ff7800;
+$black:#130f40;
+$light-color:#666;
+$box-shadow:0.5rem 1rem rgba(0,0,0,.11);
+$border:.2rem solid rgba(0,0,0,.1);
+$outline:.1rem solid rgba(0,0,0,.1);
+$outline-hover:.2rem solid rgba(0,0,0,.1);
+
+
+*{
+  box-sizing: border-box;
+  // margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.1s linear;
+  font-family: 'Nunito', sans-serif;
+    list-style: none;
+}
+a{
+  text-decoration: none
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+body{
+  background: #fff;
+}
+.btn{
+  font-size: 1.7rem;
+  background: var(--orange);
+  border: solid 2px var(--orange);
+  margin-top: 1rem;
+  border-radius: 5px;
+  color: var(--white);
+  display: inline-block;
+  padding: .8rem 3rem;
+}
+.btn:hover{
+text-align: center;
+background: rgb(245, 235, 193);
+color: #ff7800;
+}
+.heading{
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.heading .space
+{
+  background: none;
+}
+.heading span{
+  border-radius: .5rem;
+  font-size: 3.5rem;
+  background: rgba(255,165,0,.2);
+  padding:.2rem 1rem;
+  margin: 3rem .2rem;
+  color: var(--orange);
+  display: inline-block;
+}
+@media(max-width:450px){
+  .heading span{
+    font-size: 1.9rem;
+  }
+}

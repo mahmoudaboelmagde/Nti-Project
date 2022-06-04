@@ -1,0 +1,42 @@
+<section class="gallary ">
+  <div class="heading">
+    <span>g</span>
+    <span>a</span>
+    <span>l</span>
+    <span>l</span>
+    <span>e</span>
+    <span>r</span>
+    <span>y</span>
+  </div>
+
+  <div class="box-container container">
+
+
+    <div class="box" *ngFor="let item of hotel| paginate: { id: 'showProviders',
+    itemsPerPage: pageSize,
+    currentPage: p,
+    totalItems: total }">
+      <img [src]="_GetdataService.imageBase+item.image" class="img-fluid" alt="">
+      <div class="contant">
+        <h3>{{item.name}}</h3>
+        <p>{{item.email}}</p>
+        <a class="btn" [routerLink]="['/placedetails',item._id]">see more</a>
+      </div>
+    </div>
+    
+    <pagination-controls  id="showProviders"
+    (pageChange)="pageChanged($event)"
+    (pageBoundsCorrection)="pageChanged($event)"
+    [maxSize]="9"
+    [directionLinks]="true"
+    [autoHide]="true"
+    [responsive]="true"
+    previousLabel="Previous"
+    nextLabel="Next"
+   >
+</pagination-controls>
+
+
+
+  </div>
+</section>

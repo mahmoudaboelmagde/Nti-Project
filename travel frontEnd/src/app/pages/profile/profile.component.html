@@ -1,0 +1,158 @@
+<section id="pro">
+  <div class="container my-5">
+    <div class="row ">
+      <div class="col-md-5  ">
+        <div class="border border-2 rounded p-2 ">
+
+          <div class="col-7 mx-auto pb-3 text-center ">
+            <img [src]="_GetdataService?.imageUser" class="img-fluid rounded-pill " alt="">
+            <a class="btn" routerLink="/uploadphoto">addPhoto</a>
+          </div>
+          <hr>
+          <div class="subtitle mb-3 ">
+            profile
+          </div>
+          <p>3 recommandation</p>
+          <hr>
+          <div class="subtitle mb-3 ">
+            Reservation
+          </div>
+          <div class="books" *ngFor="let item of booking">
+<div class="row">
+  <div class="col-6">
+
+    <h6>Hotel: {{item.name}}</h6>
+    <h6>City: {{item.city}}</h6>
+    <h6>phone: {{item.phoneHotel}}</h6>
+    <img [src]="_GetdataService.imageBase+item.image" class="rounded-pill" id="imgRes" alt="">
+  </div>
+<div class="col-6">
+
+  <a class="btn btn-danger " (click)="cansel()">cancel Reservation </a>
+
+</div>
+</div>
+<hr>
+          </div>
+          <div class="subtitle mb-3 ">
+            preference
+          </div>
+          <h6>good tourguide communcation</h6>
+          <h6>good hotels</h6>
+          <h6>good travels</h6>
+
+        </div>
+      </div>
+
+      <div class="col-md-7 ">
+        <div class="col-md-12 px-3 py-2 my-3 border border-2 rounded">
+          <div class=" ">
+            <div class="subtitle mb-3 ">
+              {{UserData?.name}}
+            </div>
+            <hr>
+            <h6 class="text-info" *ngIf="UserData?.role != null">{{UserData?.role}}</h6>
+            <p>8.5 <span><i class="fa-solid fa-star  text-info"></i>
+              <i class="fa-solid fa-star text-info"></i>
+              <i class="fa-solid fa-star  text-info"></i>
+              <i class="fa-solid fa-star  text-info"></i></span>
+            </p>
+
+
+            <p><i class="fa-solid fa-check"></i> contact</p>
+
+
+          </div>
+
+
+        </div>
+        <div class=" col-md-12">
+          <div class="border border-2 rounded p-2">
+            <div class="subtitle mb-3 ">
+              About <span> <i class="fa-solid fa-user-large"></i></span>
+            </div>
+
+            <hr>
+
+
+            <h5 class="text-info">client information</h5>
+            <div>
+              <table class="table">
+                <tr>
+                  <td>
+                    address
+                  </td>
+                  <td>
+                    nasr city cairo </td>
+                </tr>
+                <tr>
+                  <td>
+                    email
+                  </td>
+                  <td>
+                    {{UserData?.email}}
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    birth of date
+                  </td>
+                  <td>
+                    sep 25,1998
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    phone
+                  </td>
+                  <td>
+                    {{UserData?.phone}}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    age
+                  </td>
+                  <td>
+                   {{UserData?.age}}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    gender
+                  </td>
+                  <td>
+                   {{UserData?.gender}}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    languages
+                  </td>
+                  <td>
+                    arbic
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    categories
+                  </td>
+                  <td>
+                    historical culture</td>
+                </tr>
+
+              </table>
+            </div>
+
+          </div>
+        </div>
+        <button class="btn btn-outline-danger px-4 my-2 float-end m-5 " (click)="logOut()">logOut</button>
+        <button class="btn btn-outline-danger px-4 my-2 float-end m-5" routerLink="/edituser">edit</button>
+        <button class="btn btn-outline-danger px-4 my-2 float-end m-5" routerLink="/editpassword">edit Password</button>
+        <button class="btn btn-outline-danger px-4 my-2 float-end m-5" routerLink="/addhotel" *ngIf="!isAdmin">dashboard</button>
+
+      </div>
+    </div>
+  </div>
+</section>

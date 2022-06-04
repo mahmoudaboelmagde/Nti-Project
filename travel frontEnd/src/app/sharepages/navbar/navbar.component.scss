@@ -1,0 +1,251 @@
+.header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--black);
+  padding: 2rem 9%;
+  width: 100%;
+  z-index: 10000;
+
+}
+// nav{
+//   margin-left: auto !important;
+// }
+#mnue-bar{
+  color: var(--white);
+  border: 1px solid white;
+  font-size: 3rem;
+  border-radius: .5rem;
+  padding: .1rem 1.2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.header .container-fluid  .logo{
+  text-transform: uppercase;
+  color:  var(--white);
+  font-size: 2.5rem;
+  font-weight: bolder;
+
+}
+.header .container-fluid  .logo span{
+  color: var(--orange);
+
+}
+.header .container-fluid  nav a{
+  color: var(--white);
+  margin: 0 .8rem;
+  font-size: 2rem;
+
+}
+.header .container-fluid  nav a:hover,
+.header .container-fluid  nav a:focus
+{
+  color: var(--orange);
+}
+.header .container-fluid  .icons a{
+
+  cursor: pointer;
+  font-size: 2rem;
+  color: var(--white );
+
+}
+.header .container-fluid  .icons svg:hover {
+  color: var(--orange);
+}
+.header .container-fluid  .form-search {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  padding: 1.5rem 2rem;
+border-top: 1px solid rgba(255,255,255,.2);
+display: flex;
+align-items: center;
+z-index: 1000;
+background: #333;
+clip-path: polygon(0 0,100% 0,100% 0,0 0);
+}
+.header .container-fluid  .form-search.active {
+  clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+
+}
+#search-bar{
+  width: 100%;
+  padding: 1rem;
+  text-transform: none;
+  color: #333;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+}
+
+.header .container-fluid  .form-search label{
+  color: var(--white);
+  font-size: 3rem;
+cursor: pointer;
+margin-left: 1.5rem;
+}
+.header .container-fluid  .form-search label:hover{
+  color: var(--orange);
+
+}
+
+
+// login form
+.top{
+  top: -200%;
+}
+.login-form-container{
+  position: fixed;
+  left: 0;
+top: -200%;
+  display: flex;
+min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 1000;
+}
+.login-form-container form{
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  background: var(--white);
+  border-radius: .5rem;
+  width: 50rem;
+
+}
+.login-form-container form h3{
+  font-size: 3rem;
+  color: #444;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+.login-form-container form .box{
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #444;
+  margin: 1rem 0;
+  border: 2px solid rgba(0,0,0,0.3);
+  text-transform: none;
+}
+.login-form-container form .box:focus{
+  background-color: var(--orange);
+}
+.login-form-container form #remember{
+  margin: 2rem 0;
+}
+
+.login-form-container form label{
+  font-size: 1.5rem;
+}
+.login-form-container form .btn{
+  width: 100%;
+
+}
+.login-form-container form p a{
+  color: var(--orange);
+
+}
+.login-form-container form p a:hover{
+  color: #333;
+  text-decoration: underline;
+}
+#close-icon{
+
+  color: black;
+  right: 3rem;
+  font-size: 5rem;
+  cursor: pointer;
+  z-index: 1000;
+
+}
+
+#image-user{
+  width: 8%;
+  height: 10%;
+  margin-left: 80%;
+}
+// madia query
+@media (max-width:1200px)
+{
+  html{
+    font-size: 50%;
+  }
+
+}
+@media (max-width:991px){
+  .header{
+    padding: 2rem;
+    font-size: 1.5rem;
+
+  }
+  section{
+    padding: 2rem;
+  }
+  .nav{
+    padding: 0 20px;
+    font-size: 5px;
+  }
+}
+@media (max-width:768px){
+
+  #mnue-bar{
+    display: initial;
+  }
+  nav{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: #333;
+    border-top: 1px solid rgba(255,255,255,.2);
+    padding:1rem 3rem;
+    display: none;
+
+
+  }
+  .header{
+    font-size: 10px;
+  }
+  nav a{
+    background: #222;
+    display: block;
+    padding: 1.5rem;
+    margin:1.5rem 0!important;
+    border-radius: .5rem;
+    color: black;
+    font-size: 10px;
+  }
+  .login-form-container form{
+    width: 80%;
+  }
+
+
+}
+@media (max-width:450px)
+{
+  html{
+    font-size: 50%;
+  }
+
+}
+@media (max-width:716px){
+  #close-icon{
+    color: black;
+    right: 10rem;
+
+    top: 4rem;
+  }
+}
+@media (max-width:700px){
+  #close-icon{
+    color: black;
+    right: 7rem;
+
+    top: 4rem;
+  }
+}

@@ -1,0 +1,6 @@
+<div class="container m-5">
+  <form #uploadImg="ngForm" (ngSubmit)="handleSubmit()">
+      <input type="file" class="form-control" (change)="handleImg($event)" name="image">
+      <button class="btn btn-primary" >upload Image</button>
+  </form>
+</div>

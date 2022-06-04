@@ -1,0 +1,320 @@
+<section class="home">
+  <div class="content">
+    <h3>ADVENTURE IS WORTHWHILE</h3>
+    <p>Dicover New Places With Us, Adventure Awaits</p>
+    <button class="btn" routerLink="/gallery">discover more</button>
+  </div>
+
+  <div class="controls">
+    <span
+      class="vid-btn min-color active overflow-hidden text-center"
+      (click)="getActive($event)"
+      data-src="assets/image/vid-1.mp4"
+      >5555</span
+    >
+    <span
+      class="vid-btn min-color overflow-hidden"
+      (click)="getActive($event)"
+      data-src="assets/image/vid-2.mp4"
+      >CcccC</span
+    >
+
+  </div>
+
+  <div class="video-container">
+    <video [src]="videoSrc" id="video-slider" loop autoplay muted></video>
+  </div>
+</section>
+
+<!-- book -->
+<section class="book my-5" id="book">
+  <div class="heading">
+    <span>b</span>
+    <span>o</span>
+    <span>o</span>
+    <span>k</span>
+    <span class="space"></span>
+    <span>n</span>
+    <span>o</span>
+    <span>W</span>
+  </div>
+  <div class="row1 container">
+    <div class="image">
+      <img src="assets/image/book-img.svg" class="w-100 img-fluid" alt="" />
+    </div>
+    <form action="" class="shadow-lg">
+      <div class="inptBox">
+        <h3>where to</h3>
+        <input type="text" placeholder="place name" />
+      </div>
+      <div class="inptBox">
+        <h3>how many</h3>
+        <input type="number" placeholder="number of guests" />
+      </div>
+      <div class="inptBox">
+        <h3>arrivales</h3>
+        <input type="date" />
+      </div>
+      <div class="inptBox">
+        <h3>leavin</h3>
+        <input type="date" />
+      </div>
+      <a class="btn">book now</a>
+    </form>
+  </div>
+</section>
+
+
+
+<!-- servics -->
+<section class="services container my-5" id="services">
+  <div class="heading">
+    <span>s</span>
+    <span>e</span>
+    <span>r</span>
+    <span>v</span>
+    <span>c</span>
+    <span>e</span>
+    <span>s</span>
+  </div>
+  <div class="box-container">
+    <div class="box">
+      <span>
+        <i class="fa-solid fa-utensils"></i>
+      </span>
+      <h3>Affordable Hotels</h3>
+      <p>
+        Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore
+        Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto
+        Ipsum Corrupti!
+      </p>
+    </div>
+    <div class="box">
+      <span>
+        <i class="fa-solid fa-utensils"></i>
+      </span>
+      <h3>Affordable Hotels</h3>
+      <p>
+        Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore
+        Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto
+        Ipsum Corrupti!
+      </p>
+    </div>
+    <div class="box">
+      <span>
+        <i class="fa-solid fa-utensils"></i>
+      </span>
+      <h3>Affordable Hotels</h3>
+      <p>
+        Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore
+        Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto
+        Ipsum Corrupti!
+      </p>
+    </div>
+    <div class="box">
+      <span>
+        <i class="fa-solid fa-utensils"></i>
+      </span>
+      <h3>Affordable Hotels</h3>
+      <p>
+        Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore
+        Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto
+        Ipsum Corrupti!
+      </p>
+    </div>
+    <div class="box">
+      <span>
+        <i class="fa-solid fa-utensils"></i>
+      </span>
+      <h3>Affordable Hotels</h3>
+      <p>
+        Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore
+        Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto
+        Ipsum Corrupti!
+      </p>
+    </div>
+    <div class="box">
+      <span>
+        <i class="fa-solid fa-utensils"></i>
+      </span>
+      <h3>Affordable Hotels</h3>
+      <p>
+        Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore
+        Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto
+        Ipsum Corrupti!
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- gallary  -->
+
+
+
+<!-- slider -->
+<div class="review-slider container my-5" id="review">
+  <div class="heading">
+    <span>r</span>
+    <span>e</span>
+    <span>v</span>
+    <span>i</span>
+    <span>e</span>
+    <span>w</span>
+  </div>
+
+  <div class="warpper">
+
+
+    <div class="slider">
+
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+          <div class="box">
+            <img src="assets/image/pic1.png" alt="">
+            <h3>John Deo</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ipsa Adipisci Quisquam Sunt Nesciunt Fugiat Odit Minus Illum Asperiores Dolorum Enim Sint Quod Ipsam Distinctio Molestias Consectetur Ducimus Beatae, Reprehenderit Exercitationem!</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="box">
+            <img src="assets/image/pic3.png" alt="">
+            <h3>John Deo</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ipsa Adipisci Quisquam Sunt Nesciunt Fugiat Odit Minus Illum Asperiores Dolorum Enim Sint Quod Ipsam Distinctio Molestias Consectetur Ducimus Beatae, Reprehenderit Exercitationem!</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="box">
+            <img src="assets/image/pic2.png" alt="">
+            <h3>John Deo</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ipsa Adipisci Quisquam Sunt Nesciunt Fugiat Odit Minus Illum Asperiores Dolorum Enim Sint Quod Ipsam Distinctio Molestias Consectetur Ducimus Beatae, Reprehenderit Exercitationem!</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="box">
+            <img src="assets/image/pic4.png" alt="">
+            <h3>John Deo</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ipsa Adipisci Quisquam Sunt Nesciunt Fugiat Odit Minus Illum Asperiores Dolorum Enim Sint Quod Ipsam Distinctio Molestias Consectetur Ducimus Beatae, Reprehenderit Exercitationem!</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </ng-template>
+
+      </owl-carousel-o>
+
+
+    </div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<!-- contact  -->
+<div class="contact my-5" id="contact">
+  <div class="container">
+    <div class="heading">
+      <span>c</span>
+      <span>o</span>
+      <span>n</span>
+      <span>t</span>
+      <span>a</span>
+      <span>c</span>
+      <span>t</span>
+    </div>
+
+<div class="d-flex justify-content-between align-items-center">
+  <div class="image">
+    <img src="assets/image/contact-img.svg" class="img-fluid w-100" alt="">
+  </div>
+  <form >
+    <div class="contianer">
+
+      <div class="inpBox">
+
+        <input type="text" placeholder="name">
+        <input type="email" placeholder="email">
+      </div>
+      <div class="inpBox">
+
+      <input type="number" placeholder="number">
+      <input type="text" placeholder="sbject">
+      </div>
+      <textarea type="text" placeholder="messgae"  class="message">message
+       </textarea>
+      <a  class="btn">send message</a>
+    </div>
+  </form>
+</div>
+<div class="slider">
+
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide>
+      <div class="box">
+        <img src="assets/image/1.jpg" class="w-50 img-fluid m-0 p-0" alt="">
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="box">
+        <img src="assets/image/2.jpg" class="w-50 img-fluid m-0 p-0" alt="">
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="box">
+        <img src="assets/image/3.jpg" class="w-50 img-fluid m-0 p-1" alt="">
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="box">
+        <img src="assets/image/4.jpg" class="w-50 img-fluid m-0 p-0" alt="">
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="box">
+        <img src="assets/image/5.jpg" class="w-50 img-fluid m-0 p-0" alt="">
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="box">
+        <img src="assets/image/6.jpg" class="w-50 img-fluid m-0 p-0"   alt="">
+      </div>
+    </ng-template>
+
+  </owl-carousel-o>
+
+
+</div>
+
+
+  </div>
+</div>
+
