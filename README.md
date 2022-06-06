@@ -1,2 +1,2 @@
-# Nti-Project
+# Nti-Project/Travel-app
 node Js(backEnd)-angular
